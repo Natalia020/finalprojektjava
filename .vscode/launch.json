@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ProjektjavaApplication<projektjava>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.example.projektjava.ProjektjavaApplication",
+            "projectName": "projektjava",
+            "args": ""
+        }
+    ]
+}
