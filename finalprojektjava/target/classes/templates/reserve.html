@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz rezerwacji</title>
+    <link th:href="@{/css/reserve.css}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <form method="get" action="/returntoaccount">
+        <input type="submit" value="Strona główna">
+    </form>
+    <form method="get" action="/reserve">
+        <input type="submit" value="Zarezerwuj usługę">
+    </form>
+    <form method="get" action="/pricelist">
+        <input type="submit" value="Cennik">
+    </form>
+    <form method="get" action="/admin">
+        <input type="submit" value="Tryb admina">
+    </form>
+    <form method="get" action="/logout">
+        <input type="submit" value="Wyloguj się">
+    </form>
+
+
+</nav>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <form th:action="@{reserve}" th:object="${reserveForm}" method="post">
+        <p style="color: white">Nazwa użytkownika  :   <input type="text" name="userName"></p>
+        <p style="color: white">Imię   :   <input type="text" name="firstName"></p>
+        <p style="color: white">Nazwisko    :   <input type="text" name="lastName"></p>
+        <p style="color: white">Nazwa usługi  :   <input type="text" name="service"></p>
+        <p style="color: white">Termin usługi (dd-mm-yyyy)   :   <input type="text" name="date"></p>
+        <p><input type="submit" value="Zarezerwuj" style="background-color: crimson"/></p>
+    </form>
+</nav>
+</body>
+</html>
