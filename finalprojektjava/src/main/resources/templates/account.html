@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Strona główna</title>
+  <link th:href="@{/css/account.css}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <form method="get" action="/returntoaccount">
+    <input type="submit" value="Strona główna">
+  </form>
+  <form method="get" action="/reserve">
+      <input type="submit" value="Zarezerwuj usługę">
+    </form>
+  <form method="get" action="/pricelist">
+    <input type="submit" value="Cennik">
+  </form>
+  <form method="get" action="/admin">
+    <input type="submit" value="Tryb admina">
+  </form>
+  <form method="get" action="/logout">
+    <input type="submit" value="Wyloguj się">
+  </form>
+
+
+</nav>
+</body>
+</html>

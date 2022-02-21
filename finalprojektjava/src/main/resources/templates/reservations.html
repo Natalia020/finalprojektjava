@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Raport</title>
+    <link th:href="@{/css/reservations.css}" rel="stylesheet">
+</head>
+<body>
+<nav class="nav flex-column bg-dark navbar-dark">
+    <h2 style="color: white">Rezerwacje</h2>
+    <table border="1">
+        <tr>
+            <th style="color: white">Imię</th>
+            <th style="color: white">Nazwisko</th>
+            <th style="color: white">Usługa</th>
+            <th style="color: white">Termin</th>
+        </tr>
+        <tr th:each = "Reservation: ${reservations}">
+            <td th:text="${Reservation.firstName}" style="color: white"/>
+            <td th:text="${Reservation.lastName}" style="color: white"/>
+            <td th:text="${Reservation.service}" style="color: white"/>
+            <td th:text="${Reservation.date}" style="color: white"/>
+        </tr>
+    </table>
+    <form method="get" action="/admin">
+        <input type="submit" value="Powrót" style="background-color: indianred">
+    </form>
+</nav>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cennik</title>
+    <link th:href="@{/css/pricelist.css}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <form method="get" action="/returntoaccount">
+        <input type="submit" value="Strona główna">
+    </form>
+    <form method="get" action="/reserve">
+        <input type="submit" value="Zarezerwuj usługę">
+    </form>
+    <form method="get" action="/pricelist">
+        <input type="submit" value="Cennik">
+    </form>
+    <form method="get" action="/admin">
+        <input type="submit" value="Tryb admina">
+    </form>
+    <form method="get" action="/logout">
+        <input type="submit" value="Wyloguj się">
+    </form>
+</nav>
+<ul>
+    <h1>Mycie</h1>
+    <li>Mycie podstawowe - od 100 zł</li>
+    <li>Mycie premium - od 150 zł</li>
+    <h1>Powłoki ceramiczne</h1>
+    <li>Powłoka SSR - od 170 zł</li>
+    <li>Powłoka Glass - od 2700 zł</li>
+    <li>Powłoka Ceramic Coating - od 4700 zł</li>
+    <li>Powłoka Tytanowa - od 5700 zł</li>
+    <h1>Lakier</h1>
+    <li>Odświeżenie lakieru - od 500 zł</li>
+    <li>Pełna korekta lakieru - od 1500 zł</li>
+    <li>Folia bezpieczna - od 600 zł</li>
+    <li>Wosk - od 300 zł</li>
+    <h1>Wnętrze</h1>
+    <li>Pranie tapicerki - od 300 zł</li>
+    <li>Detailing wnętrza - od 400 zł</li>
+    <li>Czyszczenie i impregnacja skór - od 350 zł</li>
+    <h1>Silnik</h1>
+    <li>Mycie komory silnika - od 150 zł</li>
+    <li>Zabezpieczenie komory silnika - od 85 zł</li>
+    <h1>Felgi</h1>
+    <li>Czyszczenie felg - od 85 zł</li>
+    <li>Zabezpieczenie felg - od 60 zł</li>
+    <h1>Jednoślady</h1>
+    <li>Powłoka zabezpieczająca - od 150 zł</li>
+    <p></p>
+
+</ul>
+</body>
+</html>

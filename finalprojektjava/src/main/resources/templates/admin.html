@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello Admin</title>
+    <link th:href="@{/css/admin.css}" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <form method="get" action="/mainpage">
+        <input type="submit" value="Strona główna">
+    </form>
+    <form method="get" action="/raport">
+        <input type="submit" value="Raport rezerwacji">
+    </form>
+    <form method="get" action="/logout">
+        <input type="submit" value="Wyloguj się">
+    </form>
+</nav>
+</body>
+</html>
